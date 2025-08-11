@@ -5,6 +5,7 @@
 package com.tienda.domain;
 import jakarta.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import lombok.Data;
 /**
  *
@@ -16,7 +17,7 @@ import lombok.Data;
 public class Categoria implements Serializable {
    
     private static final long serialVersionUID = 1L;
-
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_categoria")
@@ -26,7 +27,13 @@ public class Categoria implements Serializable {
     private String rutaImagen;
     private boolean activo;
 
-	@@ -26,5 +28,4 @@ public Categoria(String descripcion, boolean activo) {
+    @OneToMany
+    @JoinColumn(name="id_categoria",updatable=false)
+    List<Producto> productos;
+
+    public Categoria() {
+    }
+    public Categoria(String descripcion, boolean activo) {
         this.descripcion = descripcion;
         this.activo = activo;
     }
