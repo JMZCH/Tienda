@@ -1,21 +1,20 @@
-
 .header{
     background-color: #076AF0;
     height: 80px;
     position: fixed;
-    width: 100%;
+    width:100%;
     top:0;
     left:0;
 }
 
 .nav{
     display: flex;
-    justify-content:space-between;
-    margin: 0 auto;
+    justify-content: space-between;
+    margin:0 auto;
 }
 
 .nav-link{
-    color: white;
+    color:white;
     text-decoration: none;
 }
 
@@ -31,11 +30,16 @@
     margin-right: 40px;
     list-style: none;
     line-height: 80px;
-    
 }
+
 .nav-menu-item{
-    font-size:18px;
+    font-size: 18px;
     margin: 0 10px;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 10px;
 }
 
 .nav-menu-link:hover{
@@ -43,6 +47,4 @@
     padding: 8px 12px;
     border-radius: 10px;
     transition: 0.5s;
-    
-    
 }
