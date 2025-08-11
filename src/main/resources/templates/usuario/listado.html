@@ -10,11 +10,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>TechShop</title>
     </head>
     <body>
-        <header th:replace="~{layout/plantilla :: header}"/>
-        <section th:replace="~{categoria/fragmentos :: botonesAgregar}"/>
-        <section th:replace="~{categoria/fragmentos :: agregarCategoria}"/> 
-        <section th:replace="~{categoria/fragmentos :: listadoCategorias}"/>
-        <footer th:replace="~{layout/plantilla :: footer}"/>      
-      
+        <header th:replace="~{layout/plantilla :: header}"></header>
+
+        <section th:replace="~{usuario/fragmentos :: botonesAgregar}"></section>
+        <section th:replace="~{usuario/fragmentos :: agregarUsuario}"></section>
+        <section th:replace="~{usuario/fragmentos :: listadoUsuarios}"></section>
+
+        <footer th:replace="~{layout/plantilla :: footer}"></footer>
+
     </body>
 </html>
