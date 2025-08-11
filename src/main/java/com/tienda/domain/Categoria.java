@@ -14,7 +14,7 @@ import lombok.Data;
 @Entity
 @Table(name="categoria")
 public class Categoria implements Serializable {
-
+   
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -26,10 +26,7 @@ public class Categoria implements Serializable {
     private String rutaImagen;
     private boolean activo;
 
-    public Categoria() {
-    }
-
-    public Categoria(String descripcion, boolean activo) {
+	@@ -26,5 +28,4 @@ public Categoria(String descripcion, boolean activo) {
         this.descripcion = descripcion;
         this.activo = activo;
     }

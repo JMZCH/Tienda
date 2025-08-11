@@ -46,16 +46,3 @@ public class Producto implements Serializable {
 
 
 }
-
-
-    public Producto(String descripcion, String detalle, double precio, int existencias, String rutaImagen, boolean activo) {
-        this.descripcion = descripcion;
-        this.detalle = detalle;
-        this.precio = precio;
-        this.existencias = existencias;
-        this.rutaImagen = rutaImagen;
-        this.activo = activo;
-    }
-
-
-}
